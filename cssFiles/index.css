@@ -1,0 +1,176 @@
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #10234c;
+  color: white;
+  text-decoration: solid;
+  padding: 10px 0;
+  text-align: right;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+
+a:hover{
+    color: rgb(30, 194, 82);
+}
+
+.my-new-page{
+    color: white;
+    height: 500px;
+    background-image: url("../images/gb.jpeg");
+   text-align: center;
+   font-size: 30px;
+padding-top: 40px;
+}
+.welcome{
+  padding-top: 80px;
+  font-size: 60px;
+}
+.mary{
+    font-size: 60px;
+    font-weight: 300;
+} */
+/* Reset any default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes the full viewport height */
+}
+
+header {
+  background: #10234c;
+  color: white;
+  padding: 10px 0;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+
+a:hover {
+  color: rgb(30, 194, 82);
+}
+
+.my-new-page {
+  color: white;
+  height: 500px;
+  background-image: url("../images/gb.jpeg");
+  text-align: center;
+  font-size: 30px;
+  padding-top: 40px;
+}
+
+.welcome {
+  padding-top: 80px;
+  font-size: 60px;
+}
+
+.mary {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.hotel-gallery {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.left-column, .right-column {
+  width: 45%;
+}
+
+.room-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.room-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-item h4 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+room-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #10234c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+footer h3 {
+  margin: 0;
+}

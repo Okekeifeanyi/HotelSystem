@@ -103,6 +103,7 @@ nav a {
   width: 40px;
   height: 40px;
   margin-left: 30px;
+  border-radius: 50%;
 }
 
 a:hover {
@@ -112,10 +113,23 @@ a:hover {
 .my-new-page {
   color: white;
   height: 500px;
-  background-image: url("../images/gb.jpeg");
+  background-image: url("../images/bg.jpeg");
+  background-size: 120%; /* Start zoomed in */
+  background-position: center;
   text-align: center;
   font-size: 30px;
   padding-top: 40px;
+  animation: zoomOut 5s infinite; /* Apply zoom-out animation */
+}
+
+/* Keyframe animation for zoom-out effect */
+@keyframes zoomOut {
+  0% {
+    background-size: 120%; /* Start zoomed in */
+  }
+  100% {
+    background-size: 100%; /* End at normal size */
+  }
 }
 
 .welcome {

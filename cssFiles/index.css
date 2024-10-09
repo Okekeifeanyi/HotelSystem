@@ -51,7 +51,6 @@ nav ul li a:hover {
   color: rgb(30, 194, 82);
 }
 
-/* Dropdown styling */
 .dropdown {
   position: relative;
 }
@@ -285,4 +284,27 @@ footer h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     color: #05163b;
+}
+
+
+.room-item button.book-now {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0c2847;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.room-item button.book-now:hover {
+  background-color: white;
+  color: #05163b;
+}
+
+.room-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

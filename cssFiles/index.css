@@ -9,14 +9,17 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
+  /* background: linear-gradient(135deg, #d98ac7, #6d8fb2, #ff69b4);
+  animation: gradientAnimation 15s ease infinite; */
 }
 
 header {
-  background-color: white(16, 35, 76, 0.7); 
+  background-color: white(16, 35, 76, 0.7);
   color: white;
   padding: 10px 0;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   position: fixed;
   width: 100%;
@@ -96,16 +99,15 @@ nav ul li a:hover {
 }
 
 .my-new-page::before {
-  content: ""; 
-  position: absolute; 
-  top: 0; 
+  content: "";
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
   z-index: -1; /* Make sure the overlay is behind the content */
 }
-
 
 @keyframes zoomOut {
   0% {
@@ -127,15 +129,11 @@ nav ul li a:hover {
   z-index: -1;
 }
 
-.welcome, .mary {
-  padding-top: 80px;
+.welcome {
+  padding-top: 130px;
+  padding-bottom: 30px;
   font-size: 60px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.mary {
-  font-weight: 300;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .hotel-gallery {
@@ -145,7 +143,8 @@ nav ul li a:hover {
   background-color: #f8f9fa;
 }
 
-.left-column, .right-column {
+.left-column,
+.right-column {
   width: 45%;
 }
 
@@ -173,7 +172,7 @@ nav ul li a:hover {
 }
 
 .button {
-  background-color: white(16, 35, 76, 0.7); 
+  background-color: white(16, 35, 76, 0.7);
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -183,7 +182,6 @@ nav ul li a:hover {
   border-radius: 5px;
   transition: background-color 0.3s ease;
   margin-left: 1%;
-
 }
 
 .button:hover {
@@ -203,12 +201,88 @@ footer h3 {
   margin: 0;
 }
 
-.call{
+.call {
   margin-left: 2%;
 }
 
-.jay{
+.jay {
   margin-left: 3%;
   font-size: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo img {
+  width: 100px;
+
+  padding-top: 70px;
+}
+
+.logo-writeup {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.view {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #05163b;
+}
+.long-write {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  color: #05163b;
+}
+
+.slider-container img {
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 30px;
+  border-radius: 30px;
+  border-color: #05163b;
+  border-style: dashed;
+  border-width: 5px;
+}
+
+.inspired {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #05163b;
+}
+
+.bgcenter img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.accomodation-write{
+  text-align: left;
+  padding-top: 30px;
+  font-size: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #05163b;
 }

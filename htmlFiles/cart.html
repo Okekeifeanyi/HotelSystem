@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../cssFiles/cart.css" />
+    <title>Hotel Management System</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul class="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">My Account</a>
+                  <div class="dropdown-content">
+                      <a href="login.html">Login</a>
+                      <a href="register.html">Register</a>
+                      <a href="checkout.html">Checkout</a>
+                      <a href="cart.html">Cart</a>
+                  </div>
+              </li>
+          </ul>
+      </nav>
+      <div class="jay">JAY-SUITES</div>
+      <div class="call">Tel: +234(0)8069323233</div>
+
+      <div class="button" onclick="window.location.href='book.html'">Book Now</div>
+  </header>  
+    <div class="cart">
+      <a href="#" id="cart-icon">
+        <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+      </a>
+      <div class="cart-dropdown" id="cart-dropdown">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <div class="cart-total">
+          <strong>Total:</strong> $<span id="cart-total">0.00</span>
+        </div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  
+    <footer>
+      <h3>&copy; 2024 Maryjane's Hotel & Suits. All Rights Reserved.</h3>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../cssFiles/cart.css" />
+    <title>Your Cart - JAY-SUITES</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">My Account</a>
+            <div class="dropdown-content">
+              <a href="login.html">Login</a>
+              <a href="register.html">Register</a>
+              <a href="checkout.html">Checkout</a>
+              <a href="cart.html">Cart</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="jay">JAY-SUITES</div>
+      <div class="call">Tel: +234(0)8069323233</div>
+      <div class="button" onclick="window.location.href='book.html'">Book Now</div>
+    </header>
+
+    <main>
+      <section class="cart-section">
+        <div class="cart-items-container">
+            <ul id="cart-items">
+              <!-- Dummy items for visual representation -->
+              <li>Deluxe Room - $120.00 <button class="remove-btn">Remove</button></li>
+              <li>Luxury Suite - $200.00 <button class="remove-btn">Remove</button></li>
+              <li>Single Room - $80.00 <button class="remove-btn">Remove</button></li>
+            </ul>
+          </div>
+  
+          <div class="cart-summary">
+            <div class="cart-total">
+              <strong>Total:</strong> $<span id="cart-total">400.00</span>
+            </div>
+            <div class="cart-buttons">
+              <button class="delete-btn" onclick="clearCart()">Clear Cart</button>
+              <button class="checkout-btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+            </div>
+          </div>
+      </section>  
+    </main>
+
+    <footer>
+      <h3>&copy; 2024 Maryjane's Hotel & Suits. All Rights Reserved.</h3>
+    </footer>
+
+    <script src="cart.js"></script>
+  </body>
+</html>
